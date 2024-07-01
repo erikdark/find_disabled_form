@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bookstore</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 50px;
+        }
+        .search-bar {
+            margin-bottom: 20px;
+        }
+        .search-bar input[type="text"] {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+        }
+        .search-bar button {
+            padding: 10px 15px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to Online Bookstore</h1>
+    <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search for books..." disabled>
+        <button onclick="searchBooks()">Search</button>
+    </div>
+    <script>
+        function searchBooks() {
+            var query = document.getElementById('searchInput').value;
+            alert("Searching for: " + query);
+        }
+    </script>
+</body>
+</html>
